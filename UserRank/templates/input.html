@@ -1,0 +1,60 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Twitter User Recommendation System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/floating-labels/floating-labels.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <form class="form-signin" action="output/?id='+'id'+'&ckey='+ckey+'&cskey='+cskey+'&atkey='+atkey+'&atskey='+atskey+'&count='+count">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="{% static 'twitter-icon.jpg' %}" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Twitter User Recommendation System</h1>
+        <p>Personalized Page Rank Algorithm </p>
+      </div>
+
+      <div class="form-label-group">
+        <input name="id" id="inputEmail" class="form-control" placeholder="Twitter ID" required autofocus>
+        <label for="inputEmail">Twitter ID</label>
+      </div>
+
+      <div class="form-label-group">
+        <input name="ckey" id="inputEmail" class="form-control" placeholder="Twitter ID" required autofocus>
+        <label for="inputEmail">Consumer Key</label>
+      </div>
+
+      <div class="form-label-group">
+        <input name="cskey" id="inputEmail" class="form-control" placeholder="Twitter ID" required autofocus>
+        <label for="inputEmail">Consumer Secret Key</label>
+      </div>
+
+      <div class="form-label-group">
+        <input name="atkey" id="inputEmail" class="form-control" placeholder="Twitter ID" required autofocus>
+        <label for="inputEmail">Access Token Key</label>
+      </div>
+      
+      <div class="form-label-group">
+        <input name="atskey" id="inputEmail" class="form-control" placeholder="Twitter ID" required autofocus>
+        <label for="inputEmail">Access Token Secret Key</label>
+      </div>
+      <div class="form-label-group">
+        <input name="count" id="inputEmail" class="form-control" placeholder="Twitter ID" required autofocus>
+        <label for="inputEmail">Count</label>
+      </div>
+      
+      <button class="btn btn-lg btn-primary btn-block" name="submit"> Recommend..</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+    </form>
+  </body>
+</html>
